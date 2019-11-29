@@ -101,6 +101,9 @@
 					measures: this.measures
 				}
 			},
+			getRequestDataString: function () {
+				return JSON.stringify(this.getRequestData)
+			},
 			isRequestDataValid: function () {
 				for (const measure of this.measures) {
 					if (!measure.date) {
@@ -114,10 +117,13 @@
 			}
 		},
 		watch: {
-			getRequestData: function (newRequestData) {
-				axios.get('http://localhost:8000/predict', newRequestData).then((response) => {
-					this.projection = response.data
-				})
+			getRequestDataString: function (newRequestData) {
+				this.projection = null
+				if (this.isRequestDataValid) {
+					axios.get('http://localhost:8000/predict', this.getRequestData).then((response) => {
+						this.projection = response.data
+					})
+				}
 			}
 		},
 		methods: {

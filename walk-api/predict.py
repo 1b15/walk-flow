@@ -1,5 +1,6 @@
 import json
 import falcon
+import random
 
 class PredictResource(object):
 
@@ -25,9 +26,12 @@ class PredictResource(object):
         query = example_query
         # query = json.parse(req)
 
+        perfect_calculation_per_day = random.randint(1, 1000)
+        perfect_calculation_per_weekday = int(perfect_calculation_per_day * random.randint(70, 130) / 100)
+
         example_response = {
-          "day": "77",
-          "weekday": "65"
+          "day": perfect_calculation_per_day,
+          "weekday": perfect_calculation_per_weekday
         }
 
         resp.body = json.dumps(example_response, ensure_ascii=False)

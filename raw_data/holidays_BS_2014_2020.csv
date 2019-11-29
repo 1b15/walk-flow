@@ -1,0 +1,58 @@
+localName,name,countryCode,fixed,global,counties,launchYear,type
+Neujahr,New Year's Day,CH,True,True,,1967.0,Public
+Karfreitag,Good Friday,CH,False,False,"['CH-ZH', 'CH-BE', 'CH-LU', 'CH-UR', 'CH-SZ', 'CH-OW', 'CH-NW', 'CH-GL', 'CH-ZG', 'CH-FR', 'CH-SO', 'CH-BS', 'CH-BL', 'CH-SH', 'CH-AR', 'CH-AI', 'CH-SG', 'CH-GR', 'CH-AG', 'CH-TG', 'CH-VD', 'CH-NE', 'CH-GE', 'CH-JU']",,Public
+Ostermontag,Easter Monday,CH,False,False,"['CH-ZH', 'CH-BE', 'CH-LU', 'CH-UR', 'CH-SZ', 'CH-OW', 'CH-NW', 'CH-GL', 'CH-ZG', 'CH-FR', 'CH-SO', 'CH-BS', 'CH-BL', 'CH-SH', 'CH-AR', 'CH-AI', 'CH-SG', 'CH-GR', 'CH-AG', 'CH-TG', 'CH-TI', 'CH-VD', 'CH-NE', 'CH-GE', 'CH-JU']",1642.0,Public
+Tag der Arbeit,Labour Day,CH,True,False,"['CH-ZH', 'CH-FR', 'CH-SO', 'CH-BS', 'CH-BL', 'CH-SH', 'CH-AG', 'CH-TG', 'CH-TI', 'CH-NE', 'CH-JU']",,Public
+Auffahrt,Ascension Day,CH,False,True,,,Public
+Pfingstmontag,Whit Monday,CH,False,False,"['CH-ZH', 'CH-BE', 'CH-LU', 'CH-UR', 'CH-SZ', 'CH-OW', 'CH-NW', 'CH-GL', 'CH-ZG', 'CH-FR', 'CH-SO', 'CH-BS', 'CH-BL', 'CH-SH', 'CH-AR', 'CH-AI', 'CH-SG', 'CH-GR', 'CH-AG', 'CH-TG', 'CH-TI', 'CH-VD', 'CH-NE', 'CH-GE', 'CH-JU']",,Public
+Bundesfeier,Swiss National Day,CH,True,True,,,Public
+Weihnachten,Christmas Day,CH,True,True,,,Public
+Neujahr,New Year's Day,CH,True,True,,1967.0,Public
+Karfreitag,Good Friday,CH,False,False,"['CH-ZH', 'CH-BE', 'CH-LU', 'CH-UR', 'CH-SZ', 'CH-OW', 'CH-NW', 'CH-GL', 'CH-ZG', 'CH-FR', 'CH-SO', 'CH-BS', 'CH-BL', 'CH-SH', 'CH-AR', 'CH-AI', 'CH-SG', 'CH-GR', 'CH-AG', 'CH-TG', 'CH-VD', 'CH-NE', 'CH-GE', 'CH-JU']",,Public
+Ostermontag,Easter Monday,CH,False,False,"['CH-ZH', 'CH-BE', 'CH-LU', 'CH-UR', 'CH-SZ', 'CH-OW', 'CH-NW', 'CH-GL', 'CH-ZG', 'CH-FR', 'CH-SO', 'CH-BS', 'CH-BL', 'CH-SH', 'CH-AR', 'CH-AI', 'CH-SG', 'CH-GR', 'CH-AG', 'CH-TG', 'CH-TI', 'CH-VD', 'CH-NE', 'CH-GE', 'CH-JU']",1642.0,Public
+Tag der Arbeit,Labour Day,CH,True,False,"['CH-ZH', 'CH-FR', 'CH-SO', 'CH-BS', 'CH-BL', 'CH-SH', 'CH-AG', 'CH-TG', 'CH-TI', 'CH-NE', 'CH-JU']",,Public
+Auffahrt,Ascension Day,CH,False,True,,,Public
+Pfingstmontag,Whit Monday,CH,False,False,"['CH-ZH', 'CH-BE', 'CH-LU', 'CH-UR', 'CH-SZ', 'CH-OW', 'CH-NW', 'CH-GL', 'CH-ZG', 'CH-FR', 'CH-SO', 'CH-BS', 'CH-BL', 'CH-SH', 'CH-AR', 'CH-AI', 'CH-SG', 'CH-GR', 'CH-AG', 'CH-TG', 'CH-TI', 'CH-VD', 'CH-NE', 'CH-GE', 'CH-JU']",,Public
+Bundesfeier,Swiss National Day,CH,True,True,,,Public
+Weihnachten,Christmas Day,CH,True,True,,,Public
+Neujahr,New Year's Day,CH,True,True,,1967.0,Public
+Karfreitag,Good Friday,CH,False,False,"['CH-ZH', 'CH-BE', 'CH-LU', 'CH-UR', 'CH-SZ', 'CH-OW', 'CH-NW', 'CH-GL', 'CH-ZG', 'CH-FR', 'CH-SO', 'CH-BS', 'CH-BL', 'CH-SH', 'CH-AR', 'CH-AI', 'CH-SG', 'CH-GR', 'CH-AG', 'CH-TG', 'CH-VD', 'CH-NE', 'CH-GE', 'CH-JU']",,Public
+Ostermontag,Easter Monday,CH,False,False,"['CH-ZH', 'CH-BE', 'CH-LU', 'CH-UR', 'CH-SZ', 'CH-OW', 'CH-NW', 'CH-GL', 'CH-ZG', 'CH-FR', 'CH-SO', 'CH-BS', 'CH-BL', 'CH-SH', 'CH-AR', 'CH-AI', 'CH-SG', 'CH-GR', 'CH-AG', 'CH-TG', 'CH-TI', 'CH-VD', 'CH-NE', 'CH-GE', 'CH-JU']",1642.0,Public
+Tag der Arbeit,Labour Day,CH,True,False,"['CH-ZH', 'CH-FR', 'CH-SO', 'CH-BS', 'CH-BL', 'CH-SH', 'CH-AG', 'CH-TG', 'CH-TI', 'CH-NE', 'CH-JU']",,Public
+Auffahrt,Ascension Day,CH,False,True,,,Public
+Pfingstmontag,Whit Monday,CH,False,False,"['CH-ZH', 'CH-BE', 'CH-LU', 'CH-UR', 'CH-SZ', 'CH-OW', 'CH-NW', 'CH-GL', 'CH-ZG', 'CH-FR', 'CH-SO', 'CH-BS', 'CH-BL', 'CH-SH', 'CH-AR', 'CH-AI', 'CH-SG', 'CH-GR', 'CH-AG', 'CH-TG', 'CH-TI', 'CH-VD', 'CH-NE', 'CH-GE', 'CH-JU']",,Public
+Bundesfeier,Swiss National Day,CH,True,True,,,Public
+Weihnachten,Christmas Day,CH,True,True,,,Public
+Stephanstag,St. Stephen's Day,CH,True,False,"['CH-ZH', 'CH-BE', 'CH-LU', 'CH-UR', 'CH-SZ', 'CH-OW', 'CH-NW', 'CH-GL', 'CH-ZG', 'CH-FR', 'CH-SO', 'CH-BS', 'CH-BL', 'CH-SH', 'CH-AR', 'CH-AI', 'CH-SG', 'CH-GR', 'CH-AG', 'CH-TG']",,Public
+Neujahr,New Year's Day,CH,True,True,,1967.0,Public
+Karfreitag,Good Friday,CH,False,False,"['CH-ZH', 'CH-BE', 'CH-LU', 'CH-UR', 'CH-SZ', 'CH-OW', 'CH-NW', 'CH-GL', 'CH-ZG', 'CH-FR', 'CH-SO', 'CH-BS', 'CH-BL', 'CH-SH', 'CH-AR', 'CH-AI', 'CH-SG', 'CH-GR', 'CH-AG', 'CH-TG', 'CH-VD', 'CH-NE', 'CH-GE', 'CH-JU']",,Public
+Ostermontag,Easter Monday,CH,False,False,"['CH-ZH', 'CH-BE', 'CH-LU', 'CH-UR', 'CH-SZ', 'CH-OW', 'CH-NW', 'CH-GL', 'CH-ZG', 'CH-FR', 'CH-SO', 'CH-BS', 'CH-BL', 'CH-SH', 'CH-AR', 'CH-AI', 'CH-SG', 'CH-GR', 'CH-AG', 'CH-TG', 'CH-TI', 'CH-VD', 'CH-NE', 'CH-GE', 'CH-JU']",1642.0,Public
+Tag der Arbeit,Labour Day,CH,True,False,"['CH-ZH', 'CH-FR', 'CH-SO', 'CH-BS', 'CH-BL', 'CH-SH', 'CH-AG', 'CH-TG', 'CH-TI', 'CH-NE', 'CH-JU']",,Public
+Auffahrt,Ascension Day,CH,False,True,,,Public
+Pfingstmontag,Whit Monday,CH,False,False,"['CH-ZH', 'CH-BE', 'CH-LU', 'CH-UR', 'CH-SZ', 'CH-OW', 'CH-NW', 'CH-GL', 'CH-ZG', 'CH-FR', 'CH-SO', 'CH-BS', 'CH-BL', 'CH-SH', 'CH-AR', 'CH-AI', 'CH-SG', 'CH-GR', 'CH-AG', 'CH-TG', 'CH-TI', 'CH-VD', 'CH-NE', 'CH-GE', 'CH-JU']",,Public
+Bundesfeier,Swiss National Day,CH,True,True,,,Public
+Weihnachten,Christmas Day,CH,True,True,,,Public
+Neujahr,New Year's Day,CH,True,True,,1967.0,Public
+Karfreitag,Good Friday,CH,False,False,"['CH-ZH', 'CH-BE', 'CH-LU', 'CH-UR', 'CH-SZ', 'CH-OW', 'CH-NW', 'CH-GL', 'CH-ZG', 'CH-FR', 'CH-SO', 'CH-BS', 'CH-BL', 'CH-SH', 'CH-AR', 'CH-AI', 'CH-SG', 'CH-GR', 'CH-AG', 'CH-TG', 'CH-VD', 'CH-NE', 'CH-GE', 'CH-JU']",,Public
+Ostermontag,Easter Monday,CH,False,False,"['CH-ZH', 'CH-BE', 'CH-LU', 'CH-UR', 'CH-SZ', 'CH-OW', 'CH-NW', 'CH-GL', 'CH-ZG', 'CH-FR', 'CH-SO', 'CH-BS', 'CH-BL', 'CH-SH', 'CH-AR', 'CH-AI', 'CH-SG', 'CH-GR', 'CH-AG', 'CH-TG', 'CH-TI', 'CH-VD', 'CH-NE', 'CH-GE', 'CH-JU']",1642.0,Public
+Tag der Arbeit,Labour Day,CH,True,False,"['CH-ZH', 'CH-FR', 'CH-SO', 'CH-BS', 'CH-BL', 'CH-SH', 'CH-AG', 'CH-TG', 'CH-TI', 'CH-NE', 'CH-JU']",,Public
+Auffahrt,Ascension Day,CH,False,True,,,Public
+Pfingstmontag,Whit Monday,CH,False,False,"['CH-ZH', 'CH-BE', 'CH-LU', 'CH-UR', 'CH-SZ', 'CH-OW', 'CH-NW', 'CH-GL', 'CH-ZG', 'CH-FR', 'CH-SO', 'CH-BS', 'CH-BL', 'CH-SH', 'CH-AR', 'CH-AI', 'CH-SG', 'CH-GR', 'CH-AG', 'CH-TG', 'CH-TI', 'CH-VD', 'CH-NE', 'CH-GE', 'CH-JU']",,Public
+Bundesfeier,Swiss National Day,CH,True,True,,,Public
+Weihnachten,Christmas Day,CH,True,True,,,Public
+Neujahr,New Year's Day,CH,True,True,,1967.0,Public
+Karfreitag,Good Friday,CH,False,False,"['CH-ZH', 'CH-BE', 'CH-LU', 'CH-UR', 'CH-SZ', 'CH-OW', 'CH-NW', 'CH-GL', 'CH-ZG', 'CH-FR', 'CH-SO', 'CH-BS', 'CH-BL', 'CH-SH', 'CH-AR', 'CH-AI', 'CH-SG', 'CH-GR', 'CH-AG', 'CH-TG', 'CH-VD', 'CH-NE', 'CH-GE', 'CH-JU']",,Public
+Ostermontag,Easter Monday,CH,False,False,"['CH-ZH', 'CH-BE', 'CH-LU', 'CH-UR', 'CH-SZ', 'CH-OW', 'CH-NW', 'CH-GL', 'CH-ZG', 'CH-FR', 'CH-SO', 'CH-BS', 'CH-BL', 'CH-SH', 'CH-AR', 'CH-AI', 'CH-SG', 'CH-GR', 'CH-AG', 'CH-TG', 'CH-TI', 'CH-VD', 'CH-NE', 'CH-GE', 'CH-JU']",1642.0,Public
+Tag der Arbeit,Labour Day,CH,True,False,"['CH-ZH', 'CH-FR', 'CH-SO', 'CH-BS', 'CH-BL', 'CH-SH', 'CH-AG', 'CH-TG', 'CH-TI', 'CH-NE', 'CH-JU']",,Public
+Auffahrt,Ascension Day,CH,False,True,,,Public
+Pfingstmontag,Whit Monday,CH,False,False,"['CH-ZH', 'CH-BE', 'CH-LU', 'CH-UR', 'CH-SZ', 'CH-OW', 'CH-NW', 'CH-GL', 'CH-ZG', 'CH-FR', 'CH-SO', 'CH-BS', 'CH-BL', 'CH-SH', 'CH-AR', 'CH-AI', 'CH-SG', 'CH-GR', 'CH-AG', 'CH-TG', 'CH-TI', 'CH-VD', 'CH-NE', 'CH-GE', 'CH-JU']",,Public
+Bundesfeier,Swiss National Day,CH,True,True,,,Public
+Weihnachten,Christmas Day,CH,True,True,,,Public
+Neujahr,New Year's Day,CH,True,True,,1967.0,Public
+Karfreitag,Good Friday,CH,False,False,"['CH-ZH', 'CH-BE', 'CH-LU', 'CH-UR', 'CH-SZ', 'CH-OW', 'CH-NW', 'CH-GL', 'CH-ZG', 'CH-FR', 'CH-SO', 'CH-BS', 'CH-BL', 'CH-SH', 'CH-AR', 'CH-AI', 'CH-SG', 'CH-GR', 'CH-AG', 'CH-TG', 'CH-VD', 'CH-NE', 'CH-GE', 'CH-JU']",,Public
+Ostermontag,Easter Monday,CH,False,False,"['CH-ZH', 'CH-BE', 'CH-LU', 'CH-UR', 'CH-SZ', 'CH-OW', 'CH-NW', 'CH-GL', 'CH-ZG', 'CH-FR', 'CH-SO', 'CH-BS', 'CH-BL', 'CH-SH', 'CH-AR', 'CH-AI', 'CH-SG', 'CH-GR', 'CH-AG', 'CH-TG', 'CH-TI', 'CH-VD', 'CH-NE', 'CH-GE', 'CH-JU']",1642.0,Public
+Tag der Arbeit,Labour Day,CH,True,False,"['CH-ZH', 'CH-FR', 'CH-SO', 'CH-BS', 'CH-BL', 'CH-SH', 'CH-AG', 'CH-TG', 'CH-TI', 'CH-NE', 'CH-JU']",,Public
+Auffahrt,Ascension Day,CH,False,True,,,Public
+Pfingstmontag,Whit Monday,CH,False,False,"['CH-ZH', 'CH-BE', 'CH-LU', 'CH-UR', 'CH-SZ', 'CH-OW', 'CH-NW', 'CH-GL', 'CH-ZG', 'CH-FR', 'CH-SO', 'CH-BS', 'CH-BL', 'CH-SH', 'CH-AR', 'CH-AI', 'CH-SG', 'CH-GR', 'CH-AG', 'CH-TG', 'CH-TI', 'CH-VD', 'CH-NE', 'CH-GE', 'CH-JU']",,Public
+Bundesfeier,Swiss National Day,CH,True,True,,,Public
+Weihnachten,Christmas Day,CH,True,True,,,Public

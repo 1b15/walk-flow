@@ -1,7 +1,7 @@
 import pandas as pd
 
 if __name__ == '__main__':
-    data = pd.read_csv("Basel_Daten.csv", delimiter=';')
+    data = pd.read_csv("raw_data/Basel_Daten.csv", delimiter=';')
     locs = sorted(list(set(data['SiteName'])))
     data_list = {loc:data[data['SiteName'] == loc] for loc in locs}
     data_loc_list = {}

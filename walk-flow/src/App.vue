@@ -56,8 +56,9 @@
 			<div class="row main">
 				<button type="button" class="btn btn-primary" @click="addMeasure">Add another counting</button>
 			</div>
-			<div class="alert alert-success" role="alert" >
+			<div class="alert alert-success" role="alert" v-if="projection">
 				<h5>Projection calculated</h5>
+				{{projection}}
 				<table class="table table-bordered">
 					<tr>
 						<th>Average daily traffic</th>
@@ -114,6 +115,13 @@
 					}
 				}
 				return true
+			}
+		},
+		watch: {
+			getRequestData: function (newRequestData) {
+				axios.get('http://localhost:8000/predict', newRequestData).then((response) => {
+					this.projection = response
+				})
 			}
 		},
 		methods: {

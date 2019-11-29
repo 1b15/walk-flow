@@ -1,3 +1,5 @@
+Simple API based on [Falcon Framework](https://falconframework.org/).
+
 Install the packages:
 
 `pipenv shell`
@@ -9,3 +11,5 @@ Start the server:
 Test it:
 
 `http localhost:8000/predict`
+
+If you have questions, check the [tutorial](https://falcon.readthedocs.io/en/stable/user/tutorial.html)

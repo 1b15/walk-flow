@@ -25,7 +25,7 @@ if __name__ == '__main__':
         data_loc_list[loc] = loc_data
 
     oneExampleLocation = locs[0]
-    oneExampleLocation_data_list = data_list[oneExampleLocation]
+    oneExampleLocation_data_list = data_loc_list[oneExampleLocation]
     print('We have data from %s locations in Basel but right now only analyze "%s" (%s datapoints):'
           % (len(locs), oneExampleLocation, len(oneExampleLocation_data_list)))
 

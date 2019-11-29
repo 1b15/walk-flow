@@ -58,24 +58,20 @@
 			</div>
 			<div class="alert alert-success" role="alert" v-if="projection">
 				<h5>Projection calculated</h5>
-				{{projection}}
 				<table class="table table-bordered">
 					<tr>
 						<th>Average daily traffic</th>
-						<td>42</td>
+						<td>{{projection.day}}</td>
 					</tr>
 					<tr>
 						<th>Average weekdaily traffic</th>
-						<td>49</td>
+						<td>{{projection.weekday}}</td>
 					</tr>
 					<tr>
 						<th>Expected yearly traffic</th>
-						<td>15330</td>
+						<td>{{365*projection.day}}</td>
 					</tr>
 				</table>
-			</div>
-			<div class="row main">
-				<pre>{{getRequestData}}</pre>
 			</div>
 		</div>
 	</div>
@@ -120,7 +116,7 @@
 		watch: {
 			getRequestData: function (newRequestData) {
 				axios.get('http://localhost:8000/predict', newRequestData).then((response) => {
-					this.projection = response
+					this.projection = response.data
 				})
 			}
 		},

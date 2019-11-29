@@ -25,5 +25,10 @@ class PredictResource(object):
         query = example_query
         # query = json.parse(req)
 
-        resp.body = json.dumps(query, ensure_ascii=False)
+        example_response = {
+          "day": "77",
+          "weekday": "65"
+        }
+
+        resp.body = json.dumps(example_response, ensure_ascii=False)
         resp.status = falcon.HTTP_200

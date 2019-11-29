@@ -56,25 +56,22 @@
 			<div class="row main">
 				<button type="button" class="btn btn-primary" @click="addMeasure">Add another counting</button>
 			</div>
-			<div class="alert alert-success" role="alert" >
+			<div class="alert alert-success" role="alert" v-if="projection">
 				<h5>Projection calculated</h5>
 				<table class="table table-bordered">
 					<tr>
 						<th>Average daily traffic</th>
-						<td>42</td>
+						<td>{{projection.day}}</td>
 					</tr>
 					<tr>
 						<th>Average weekdaily traffic</th>
-						<td>49</td>
+						<td>{{projection.weekday}}</td>
 					</tr>
 					<tr>
 						<th>Expected yearly traffic</th>
-						<td>15330</td>
+						<td>{{365*projection.day}}</td>
 					</tr>
 				</table>
-			</div>
-			<div class="row main">
-				<pre>{{getRequestData}}</pre>
 			</div>
 		</div>
 	</div>
@@ -104,6 +101,9 @@
 					measures: this.measures
 				}
 			},
+			getRequestDataString: function () {
+				return JSON.stringify(this.getRequestData)
+			},
 			isRequestDataValid: function () {
 				for (const measure of this.measures) {
 					if (!measure.date) {
@@ -114,6 +114,16 @@
 					}
 				}
 				return true
+			}
+		},
+		watch: {
+			getRequestDataString: function (newRequestData) {
+				this.projection = null
+				if (this.isRequestDataValid) {
+					axios.get('http://localhost:8000/predict', this.getRequestData).then((response) => {
+						this.projection = response.data
+					})
+				}
 			}
 		},
 		methods: {

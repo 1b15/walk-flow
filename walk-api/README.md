@@ -2,6 +2,7 @@ Simple API based on [Falcon Framework](https://falconframework.org/).
 
 Install the packages:
 
+`pipenv install`
 `pipenv shell`
 
 Start the server:

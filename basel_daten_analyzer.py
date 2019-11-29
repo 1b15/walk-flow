@@ -15,7 +15,7 @@ def analyzeDurationFrequencies():
 if __name__ == '__main__':
     data = pd.read_csv("raw_data/Basel_Daten.csv", delimiter=';')
     locs = sorted(list(set(data['SiteName'])))
-    data_list = {loc:data[data['SiteName'] == loc] for loc in locs}
+    data_list = {loc: data[data['SiteName'] == loc] for loc in locs}
     data_loc_list = {}
     for loc, loc_data in data_list.items():
         dates = [x.split('+') for x in loc_data['DateTimeFrom'].values]
@@ -23,3 +23,8 @@ if __name__ == '__main__':
         loc_data = loc_data.set_index('TimeStamp')
         loc_data = loc_data[['Total', 'Duration', 'Year', 'Month', 'Weekday', 'HourFrom']]
         data_loc_list[loc] = loc_data
+
+    oneExampleLocation = locs[0]
+    print('We have data from', len(locs), 'in basel but right now only analyze ', oneExampleLocation)
+
+    print(data_list[oneExampleLocation])

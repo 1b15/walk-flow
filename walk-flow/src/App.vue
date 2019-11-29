@@ -56,7 +56,7 @@
 			<div class="row main">
 				<button type="button" class="btn btn-primary" @click="addMeasure">Add another counting</button>
 			</div>
-			<div class="alert alert-success" role="alert" v-if="projection">
+			<div class="alert alert-success" role="alert" >
 				<h5>Projection calculated</h5>
 				<table class="table table-bordered">
 					<tr>

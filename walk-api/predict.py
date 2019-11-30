@@ -1,37 +1,38 @@
 import json
 import falcon
 import random
+from .model_prediction import get_predictions
 
 class PredictResource(object):
 
-    def on_get(self, req, resp):
-        example_query = {
-          "usage": "work",
-          "measures": [
-            {
-              "date": "2019-11-20",
-              "counted": "1",
-              "temperature": "25",
-              "rain": "11"
-            },
-            {
-              "date": "2019-11-14",
-              "counted": "12",
-              "temperature": "2",
-              "rain": "22"
-            }
-          ]
-        }
+    def on_post(self, req, resp):
+        # example_query = {
+        #   "usage": "work",
+        #   "measures": [
+        #     {
+        #       "date": "2019-11-20",
+        #       "counted": "1",
+        #       "temperature": "25",
+        #       "rain": "11"
+        #     }, ...
+        #   ]
+        # }
+        # print(req.media)
 
-        query = example_query
-        # query = json.parse(req)
+        if req.media is None:
+            resp.body = json.dumps({})
+            resp.status = falcon.HTTP_400
+            return
 
-        perfect_calculation_per_day = random.randint(1, 1000)
-        perfect_calculation_per_weekday = int(perfect_calculation_per_day * random.randint(70, 130) / 100)
+        query = req.media
+
+        per_day, weekly = get_predictions(
+            query['countingPoint'], query['dow']
+        )
 
         example_response = {
-          "day": perfect_calculation_per_day,
-          "weekday": perfect_calculation_per_weekday
+          "day": round(per_day),
+          "weekday": round(weekly)
         }
 
         resp.body = json.dumps(example_response, ensure_ascii=False)

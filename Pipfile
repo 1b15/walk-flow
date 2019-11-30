@@ -9,6 +9,10 @@ verify_ssl = true
 gunicorn = "*"
 falcon = "*"
 httpie = "*"
+matplotlib = "*"
+numpy = "*"
+pandas = "*"
+sklearn = "*"
 
 [requires]
 python_version = "3.7"

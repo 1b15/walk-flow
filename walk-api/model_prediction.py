@@ -155,7 +155,7 @@ def get_mean(location_hourly_sum, locs):
     # Z = np.array(X).reshape((43,168))
     # Z * np.array(43*[0])
     mz = np.mean(Z2, axis=1)
-    return Z
+    return mz
 
 
 ###Bodge-Solve
@@ -163,14 +163,24 @@ data = import_basel_data()
 location_hourly_sum = {}
 location_daily_sum = {}
 locs = sorted(list(set(data['SiteName'])))
-print(locs)
+
 for loc, loc_data in get_location_split_dict(data).items():
     location_daily_sum[loc] = resample_location_data(loc_data, 'D')
     location_hourly_sum[loc] = resample_location_data(loc_data, 'H')
 
-def get_mean_predict(location, tag, hour):
+def get_mean_predict(location, tag):
     X = location_plot(location_hourly_sum, location)
     return np.sum(X[tag,:])
+
+def get_predictions(location, tag):
+    weeklymean = np.sum([
+        get_mean_predict(location, t) for t in range(0,6)
+    ]) / 7
+    # get_mean(location_hourly_sum, [location])[0]
+    return (
+        get_mean_predict(location, tag),
+        weeklymean
+    )
 ###
 
 def main():
@@ -179,7 +189,7 @@ def main():
     location_hourly_sum = {}
     location_daily_sum = {}
     locs = sorted(list(set(data['SiteName'])))
-    print(locs)
+    # print(locs)
     for loc, loc_data in get_location_split_dict(data).items():
         location_daily_sum[loc] = resample_location_data(loc_data, 'D')
         location_hourly_sum[loc] = resample_location_data(loc_data, 'H')
@@ -217,9 +227,6 @@ def main():
     mz = get_mean(location_hourly_sum, locs)
 
     return [np.mean(mz),np.mean(mz)/0.9]
-
-def computePrediction(input):
-    return [5, 6]
 
 if __name__ == '__main__':
     main()

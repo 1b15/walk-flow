@@ -11,6 +11,10 @@
 				<b-form-select v-model="dow" :options="dows"></b-form-select>
 			</div>
 			<div class="row main" v-if="false">
+				<label>At what time did you count?</label>
+				<b-form-input v-model="dowtime" type="number"></b-form-input>
+			</div>
+			<div class="row main" v-if="false">
 				<label for="usageTypesSelector">Why are people walking there?</label>
 				<b-form-select id="usageTypesSelector" v-model="usage" :options="usageTypes"></b-form-select>
 			</div>
@@ -72,7 +76,7 @@
 						<td>{{projection.day}}</td>
 					</tr>
 					<tr>
-						<th>Average weekdaily traffic</th>
+						<th>Average weekly traffic</th>
 						<td>{{projection.weekday}}</td>
 					</tr>
 				</table>

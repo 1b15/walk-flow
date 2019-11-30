@@ -1,7 +1,7 @@
 import json
 import falcon
 import random
-from .model_prediction import computePrediction
+from .model_prediction import get_mean_predict
 
 class PredictResource(object):
 
@@ -27,11 +27,11 @@ class PredictResource(object):
         query = example_query
         # query = json.parse(req)
 
-        perfect_calculation_per_day, perfect_calculation_per_weekday = computePrediction(query)
+        perfect_calculation_per_day = get_mean_predict('804 Rosentalstrasse 29/28', 3)
 
         example_response = {
           "day": perfect_calculation_per_day,
-          "weekday": perfect_calculation_per_weekday
+          "weekday": perfect_calculation_per_day
         }
 
         resp.body = json.dumps(example_response, ensure_ascii=False)

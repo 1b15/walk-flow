@@ -149,7 +149,6 @@ def plot_cluster_representations(location_hourly_sum, locs):
 
 def get_mean(location_hourly_sum, locs):
     X = [location_plot(location_hourly_sum, loc) for loc in locs]
-
     # Factor 1/11 - 3/11
     Z = (np.array(X) * np.array(43 * [[24 * [1], 24 * [1], 24 * [1], 24 * [1], 24 * [1], 24 * [3], 24 * [3]]]))
     Z2 = Z.reshape((43, 168))
@@ -157,6 +156,22 @@ def get_mean(location_hourly_sum, locs):
     # Z * np.array(43*[0])
     mz = np.mean(Z2, axis=1)
     return Z
+
+
+###Bodge-Solve
+data = import_basel_data()
+    location_hourly_sum = {}
+    location_daily_sum = {}
+    locs = sorted(list(set(data['SiteName'])))
+    print(locs)
+    for loc, loc_data in get_location_split_dict(data).items():
+        location_daily_sum[loc] = resample_location_data(loc_data, 'D')
+        location_hourly_sum[loc] = resample_location_data(loc_data, 'H')
+
+def get_mean_predict(location, tag, hour):
+    X = location_plot(location_hourly_sum, location)
+    return np.sum(X[tag,:])
+###
 
 def main():
 

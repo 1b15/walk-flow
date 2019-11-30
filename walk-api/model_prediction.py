@@ -160,13 +160,13 @@ def get_mean(location_hourly_sum, locs):
 
 ###Bodge-Solve
 data = import_basel_data()
-    location_hourly_sum = {}
-    location_daily_sum = {}
-    locs = sorted(list(set(data['SiteName'])))
-    print(locs)
-    for loc, loc_data in get_location_split_dict(data).items():
-        location_daily_sum[loc] = resample_location_data(loc_data, 'D')
-        location_hourly_sum[loc] = resample_location_data(loc_data, 'H')
+location_hourly_sum = {}
+location_daily_sum = {}
+locs = sorted(list(set(data['SiteName'])))
+print(locs)
+for loc, loc_data in get_location_split_dict(data).items():
+    location_daily_sum[loc] = resample_location_data(loc_data, 'D')
+    location_hourly_sum[loc] = resample_location_data(loc_data, 'H')
 
 def get_mean_predict(location, tag, hour):
     X = location_plot(location_hourly_sum, location)

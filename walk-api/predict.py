@@ -26,13 +26,20 @@ class PredictResource(object):
 
         query = req.media
 
-        per_day, weekly = get_predictions(
-            query['countingPoint'], query['dow']
+        mo,tu,we,th,fr,sa,su = get_predictions(
+            query['countingPoint']
         )
 
         example_response = {
-          "day": round(per_day),
-          "weekday": round(weekly)
+          "mo": round(mo),
+          "tu": round(tu),
+          "we": round(we),
+          "th": round(th),
+          "fr": round(fr),
+          "sa": round(sa),
+          "su": round(su),
+          "weekday": round((mo+tu+we+th+fr)/5),
+          "day": round((mo+tu+we+th+fr+sa+su)/7),
         }
 
         resp.body = json.dumps(example_response, ensure_ascii=False)

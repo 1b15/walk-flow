@@ -67,10 +67,6 @@
 						<th>Average weekdaily traffic</th>
 						<td>{{projection.weekday}}</td>
 					</tr>
-					<tr>
-						<th>Expected yearly traffic</th>
-						<td>{{365*projection.day}}</td>
-					</tr>
 				</table>
 			</div>
 		</div>

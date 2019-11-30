@@ -5,7 +5,7 @@ from sklearn.cluster import KMeans
 
 
 def import_basel_data():
-    data = pd.read_csv("../raw_data/Basel_Daten.csv", delimiter=';')
+    data = pd.read_csv("raw_data/Basel_Daten.csv", delimiter=';')
     return data
 
 
@@ -202,6 +202,9 @@ def main():
     mz = get_mean(location_hourly_sum, locs)
 
     return [np.mean(mz),np.mean(mz)/0.9]
+
+def computePrediction(input):
+    return [5, 6]
 
 if __name__ == '__main__':
     main()

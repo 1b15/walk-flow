@@ -1,7 +1,7 @@
 import json
 import falcon
 import random
-from model_prediction import main
+from .model_prediction import computePrediction
 
 class PredictResource(object):
 
@@ -27,7 +27,7 @@ class PredictResource(object):
         query = example_query
         # query = json.parse(req)
 
-        perfect_calculation_per_day, perfect_calculation_per_weekday = main()
+        perfect_calculation_per_day, perfect_calculation_per_weekday = computePrediction(query)
 
         example_response = {
           "day": perfect_calculation_per_day,

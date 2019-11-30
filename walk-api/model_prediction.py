@@ -172,14 +172,15 @@ def get_mean_predict(location, tag):
     X = location_plot(location_hourly_sum, location)
     return np.sum(X[tag,:])
 
-def get_predictions(location, tag):
-    weeklymean = np.sum([
-        get_mean_predict(location, t) for t in range(0,6)
-    ]) / 7
-    # get_mean(location_hourly_sum, [location])[0]
+def get_predictions(location):
     return (
-        get_mean_predict(location, tag),
-        weeklymean
+        get_mean_predict(location, 0),
+        get_mean_predict(location, 1),
+        get_mean_predict(location, 2),
+        get_mean_predict(location, 3),
+        get_mean_predict(location, 4),
+        get_mean_predict(location, 5),
+        get_mean_predict(location, 6)
     )
 ###
 

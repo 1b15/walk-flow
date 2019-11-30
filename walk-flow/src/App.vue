@@ -3,10 +3,10 @@
 		<h1 style="text-align: center">WalkFlow: Analyzing pedestrian volumes</h1>
 		<div class="container">
 			<div class="row main">
-				<label>Where did you count?</label>
+				<label v-if="false">Where did you count?</label>
 				<b-form-select v-model="countingPoint" :options="countingPoints"></b-form-select>
 			</div>
-			<div class="row main">
+			<div class="row main" v-if="false">
 				<label>When did you count?</label>
 				<b-form-select v-model="dow" :options="dows"></b-form-select>
 			</div>
@@ -72,12 +72,40 @@
 				<h5>Projection calculated</h5>
 				<table class="table table-bordered">
 					<tr>
-						<th>Average daily traffic</th>
-						<td>{{projection.day}}</td>
+						<th>Average Monday traffic</th>
+						<td>{{projection.mo}}</td>
 					</tr>
 					<tr>
-						<th>Average weekly traffic</th>
-						<td>{{projection.weekday}}</td>
+						<th>Average Tuesday traffic</th>
+						<td>{{projection.tu}}</td>
+					</tr>
+					<tr>
+						<th>Average Wednesday traffic</th>
+						<td>{{projection.we}}</td>
+					</tr>
+					<tr>
+						<th>Average Thursday traffic</th>
+						<td>{{projection.tu}}</td>
+					</tr>
+					<tr>
+						<th>Average Friday traffic</th>
+						<td>{{projection.fr}}</td>
+					</tr>
+					<tr>
+						<th>Average weekday traffic</th>
+						<th>{{projection.weekday}}</th>
+					</tr>
+					<tr>
+						<th>Average Saturday traffic</th>
+						<td>{{projection.sa}}</td>
+					</tr>
+					<tr>
+						<th>Average Sunday traffic</th>
+						<td>{{projection.su}}</td>
+					</tr>
+					<tr>
+						<th>Average daily traffic</th>
+						<th>{{projection.day}}</th>
 					</tr>
 				</table>
 			</div>
@@ -100,7 +128,7 @@
 				],
 				countingPoint: null,
 				countingPoints: [
-					{value: null, text: 'unknown'},
+					{value: null, text: 'Please select a location'},
 					{value: '809 Allschwilerstrasse 77/86', text: 'Allschwilerstrasse 77/86'},
 					{value: '903 Äussere Baselstrasse 328', text: 'Äussere Baselstrasse 328'},
 					{value: '911 Birskopfsteg', text: 'Birskopfsteg'},

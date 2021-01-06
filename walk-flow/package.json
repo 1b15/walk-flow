@@ -15,7 +15,7 @@
     "@babel/polyfill": "^7.6.0",
     "@vue/cli-plugin-babel": "^4.1.0",
     "@vue/cli-service": "^4.1.0",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "bootstrap": "^4.3.1",
     "mutationobserver-shim": "^0.3.3",
     "node-sass": "^4.14.1",
